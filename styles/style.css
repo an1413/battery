@@ -1,0 +1,59 @@
+body {
+  background-color: #ddd;
+}
+
+.l-wrapper {
+  position: relative; /* 부모 요소에 relative 위치 적용 */
+  margin: 0 auto;
+  width: 800px;
+  background-color: azure;
+  padding: 50px;
+  height: 800px;
+}
+
+.battery-wrapper {
+  position: absolute; /* 자식 요소에 absolute 위치 적용 */
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  background-color: greenyellow;
+  height: 50px;
+}
+
+.battery {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clock-wrapper {
+  width: 500px;
+  height: 120px;
+  background-color: red;
+}
+
+.alram {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  background-color: blue;
+}
+
+.alram-setting {
+  width: 300px;
+  background-color: aqua;
+}
+
+#alram-form {
+  display: flex;
+  gap: 10px;
+}
+

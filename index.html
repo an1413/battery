@@ -5,15 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>배터리 알람</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 
   <body>
-    배터리
+    <div class="l-wrapper">
+      <div class="battery-wrapper">
+        <p class="battery">배터리:<strong class="battery-percent">100</strong>%</p>
+      </div>
 
+      <div class="main">
+        <div class="clock-wrapper">
+          <span class="clock">시간</span>
+        </div>
+        <div class="alarm">
+          <!-- <li>알람</li> -->
+        </div>
+      </div>
+      <div class="alarm-setting">
+        <p>알람설정</p>
+        <form id="alarm-form">
+          <input type="text" class="hour" value=""><span>시</span>
+          <input type="text" class="minute" value=""><span>분</span>
+          <input type="text" class="second" value=""><span>초</span>
+          <input type="submit" value="추가">
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/clock.js"></script>
+    <script src="./js/battery.js"></script>
+    <script src="./js/alarm.js"></script>
   </body>
 
 </html>
