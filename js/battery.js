@@ -1,10 +1,6 @@
 const $battery = document.querySelector(".battery-percent");
-
-console.log($battery);
-console.log($battery.innerHTML);
+const $batteryReset = document.querySelector(".battery-subs");
 let batteryPercent = parseInt($battery.innerHTML); // 문자열을 정수로 변환해야 합니다.
-
-console.log(typeof batteryPercent);
 
 function battery_operate() {
   setInterval(function () {
@@ -14,5 +10,10 @@ function battery_operate() {
     }
   }, 1000);
 }
+
+$batteryReset.addEventListener('click', function(e) {
+  $battery.innerHTML = "100";
+  batteryPercent = 100;
+});
 
 battery_operate();

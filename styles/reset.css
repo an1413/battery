@@ -58,6 +58,10 @@ hr {
   overflow: visible; /* 2 */
 }
 
+li {
+  list-style: none;
+}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.

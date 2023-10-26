@@ -14,7 +14,6 @@ $alarmForm.addEventListener("submit", function (e) {
     const hourInput = document.querySelector(".hour");
     const minuteInput = document.querySelector(".minute");
     const secondInput = document.querySelector(".second");
-
     const hour = parseInt(hourInput.value);
     const minute = parseInt(minuteInput.value);
     const second = parseInt(secondInput.value);
@@ -22,7 +21,7 @@ $alarmForm.addEventListener("submit", function (e) {
     if (isNaN(hour) || isNaN(minute) || isNaN(second) || hour < 0 || hour >= 24 || minute < 0 || minute >= 60 || second < 0 || second >= 60) {
     alert("올바른 시간을 입력하세요.");
     return;
-}
+    }
     
     if (alarms.length >= 3) {
         alert("최대 3개의 알람까지만 설정할 수 있습니다.");
