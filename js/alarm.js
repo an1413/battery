@@ -40,7 +40,7 @@ $alarmForm.addEventListener("submit", function (e) {
     hourInput.value = "";
     minuteInput.value = "";
     secondInput.value = "";
-});
+    });
 
 function renderAlarms() {  // 알람 랜더링
     $alarmWrapper.innerHTML = ""; // 알람현황 초기화
